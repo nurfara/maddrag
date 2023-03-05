@@ -57,6 +57,48 @@ dd {
 	color: white;
 }
 
+#profile-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#profile-list li {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: calc((100% - 40px) / 3);
+}
+
+#profile-list img {
+  display: block;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#profile-list h2 {
+  font-size: 20px;
+  margin: 15px;
+  text-align: center;
+}
+
+#profile-list h3 {
+  font-size: 16px;
+  margin: 5px 15px;
+  text-align: center;
+}
+
+#profile-list p {
+  font-size: 14px;
+  margin: 15px;
+  text-align: justify;
+}
+
+
 .center {
   display: block;
   margin-left: auto;
