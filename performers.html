@@ -23,9 +23,10 @@
 					data.forEach(profile => {
 			     		const listItem = document.createElement('li');
       					listItem.innerHTML = `
-        					<img src="${profile.image}" alt="${profile.name}">
+        					<img src="${profile.pic}" alt="${profile.name}">
         					<h2>${profile.display_name}</h2>
-        					<p>${profile.username}</p>
+        					<h3>${profile.username}</h3>
+						<p>${profile.bio}</p>
      					`;
       					profileList.appendChild(listItem);
 					});
