@@ -13,17 +13,22 @@
 			</nav>
 		
 		<h1>Discover rising performers!</h1>
-		<ul>
-
-		</ul>
+		<ul>id="profile-list"</ul>
 
 		<script>
-			const listEl = document.querySelector('ul');
+			#const listEl = document.querySelector('ul');
 			fetch('./data.json')
 				.then(res => res.json())
 				.then(data => {
+					const profileList = document.getElementById('profile-list');
 					data.forEach(profile => {
-						listEl.insertAdjacentHTML('beforeend', `<li>${profile.display_name} ${profile.username}</li><`);
+			     		const listItem = document.createElement('li');
+      					listItem.innerHTML = `
+        					<img src="${profile.image}" alt="${profile.name}">
+        					<h2>${profile.display_name}</h2>
+        					<p>${profile.username}</p>
+     					`;
+      					profileList.appendChild(listItem);
 					});
 				});
 		</script>
