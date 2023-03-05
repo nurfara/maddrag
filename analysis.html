@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<meta charset="UTF-8">
+		<title>MadDrag Analysis</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<img src="maddrag_logo.png" class="center" alt="MadDrag logo">
+		<nav>
+			<a href="index.html">Home</a> 
+			<a href="performers.html">Performers</a> 
+			<a href="analysis.html">Analysis</a> 
+			</nav>
+		
+		<h1>Our Analysis</h1>
+		
+		<p>Below is a graph showing the distribution of number of hashtags used vs total engagement received by small accounts (1k to 10k followers) and big accounts (more than 10k followers).</p>
+
+		<img src="graph.jpg" class="center" alt="Hashtags vs Engagement Graph">
+
+		<p>This visualization is done to see general distribution of total engagements received by these accounts and the number of hashtags they used. Intuitively, we see that there is a downward trend when more hashtags are used in a post.</p>
+
+		<p>To quantify this relationship, we fitted a regression line to all the data available.</p>
+
+		<img src="regression.jpg" class="center" alt="Regression Line Fitted on All Data Available">
+
+		<p>The slope of the line (\beta_1) was found to be -0.006874, indicating that for every additional hashtag put into video descriptions,the number of engagements received by the account is reduced by 0.6874%.</p>
+
+		<p>We also performed an Ordinary Least Squares (OLS) Regression</p>
+
+		<img src="ols.jpg" class="center" alt="Ordinary Least Squares Regression">
+
+		<p>We found that the p-value of the t-test is 0.004. With a significance level of 5%, we conclude that the number of hashtags used affects the total engagements received.</p>
+
+		
+		<p style="font-family:Georgia, serif"><i>Brought to you by Ammar, Sofea, Fara, and Eidlan. <b>MadHacks 2023</b><i/></p>
+
+	</body>
+</html>
