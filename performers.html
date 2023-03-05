@@ -23,7 +23,7 @@
 				.then(res => res.json())
 				.then(data => {
 					data.forEach(profile => {
-						listEl.insertAdjacentHTML('beforeend', `<li>${profile.display_name}</li>`);
+						listEl.insertAdjacentHTML('beforeend', `<li>${profile.display_name} ${profile.username}</li><`);
 					});
 				});
 		</script>
