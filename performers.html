@@ -25,7 +25,7 @@
       					listItem.innerHTML = `
         					<img src="${profile.pic}" alt="${profile.name}">
         					<h2>${profile.display_name}</h2>
-        					<h3>${profile.username}</h3>
+        					<h3><a href="https://www.tiktok.com/@${profile.username}" target="_blank">@${profile.username}</a></h3>
 						<p>${profile.bio}</p>
      					`;
       					profileList.appendChild(listItem);
