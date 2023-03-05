@@ -78,6 +78,7 @@ dd {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: calc((100% - 40px) / 3);
+  max-width: 100%;
 }
 
 #profile-list img {
