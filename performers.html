@@ -13,10 +13,9 @@
 			</nav>
 		
 		<h1>Discover rising performers!</h1>
-		<ul>id="profile-list"</ul>
+		<ul id="profile-list"></ul>
 
 		<script>
-			#const listEl = document.querySelector('ul');
 			fetch('./data.json')
 				.then(res => res.json())
 				.then(data => {
