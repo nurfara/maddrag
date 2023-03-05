@@ -1,6 +1,9 @@
 body {
-	background-color: #2B2F9D;
-	margin: 60px;
+  background-color: #2B2F9D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
